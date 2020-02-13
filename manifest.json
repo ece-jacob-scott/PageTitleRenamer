@@ -1,0 +1,14 @@
+{
+  "name": "Title Organizer",
+  "version": "0.0.1",
+  "description": "Organize your web pages by renaming their titles!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "browser_action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
